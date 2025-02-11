@@ -1,27 +1,21 @@
 import * as React from "react";
 import ReactDOM from "react-dom/client"; // Ensure proper case for ReactDOM
- // import PropExam from "./lec2412/propscomp3"; // Import the PropExam component
-import DefaultProps from "./lec2412/defaultprops";
-// Select the root DOM element
+//import UserContextExample from "./lec3001/use_con_exmp3";
+// import IntrestFinder from "./lec3001/IntrestField4";
+  // import TestComponent from "./lec1601/customcomp3";
+  import InterestFinder from "./lec3001/IntrestField4";
 const rootElement = document.getElementById("root");
 
 if (rootElement) {
     const root = ReactDOM.createRoot(rootElement); // Correct usage of `createRoot`
     root.render(
         <div>
-            <DefaultProps />
-            <br />
-            <DefaultProps var1={true} />
-            <br />
-            <DefaultProps var2={"yellow"} />
-            <br />
-            <DefaultProps var3={"New Text"} />
-            <br />
-            <DefaultProps var1={true} var2={"red"} />
-            <br />
-            <DefaultProps var1={true} var2={"blue"} var3={"abc"}/>
+           {
+            <InterestFinder/>
+                  
+            }
         </div>
     );
 } else {
-    console.error("Root element not found");
+  //  console.error("Root element not found");//
 }
